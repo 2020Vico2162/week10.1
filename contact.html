@@ -41,13 +41,54 @@
             </p>
             
             <form action="https://formspree.io/f/xqkgbzjg" method="post">
-                <div>First Name <input type="text" name="FirstName"></div>
-                <div>Last Name <input type="text" name="LastName"></div>
-                <div>Email Address <input type="text" name="eMail"></div>
-                <div>Phone Number <input type="text" name="PhoneNumber"></div>
+                <div>
+                    <span class="formText">First Name</span>
+                    <span class="formEntry">
+                        <input type="text" name="FirstName">
+                    </span>
+                </div>
+                <div>
+                    <span class="formText">Last Name</span>
+                    <span class="formEntry">
+                        <input type="text" name="LastName">
+                    </span>
+                </div>
+                <div>
+                    <span class="formText">Email Address</span>
+                    <span class="formEntry">
+                        <input type="text" name="eMail">
+                    </span>
+                </div>
+                <div>
+                    <input type="radio" name="preferredContact" value="email"> I prefer eMail
+                </div>
+                <div>
+                    <span class="formText">Phone Number</span>
+                    <span class="formEntry">
+                        <input type="text" name="PhoneNumber">
+                    </span>
+                </div>
+                <div>
+                    <input type="radio" name="preferredContact" value="phone"> I prefer Phone
+                </div>
+                <div>
+                    <p>I would like my project completed in...</p>
+                    <input type="checkbox" name="urgency" value="asap">ASAP<br/>
+                    <input type="checkbox" name="urgency" value="1week">One Week<br/>
+                    <input type="checkbox" name="urgency" value="1month">One Month<br/>
+                </div>
+                <div>
+                    <p>What is your business model</p>
+                    <select name="entity">
+                        <option value="Individual">Individual</option>
+                        <option value="Small Business">Small Business</option>
+                        <option value="Corporation">Corporation</option>
+                        <option value="Non-Profit">Non-Profit</option>                    
+                    </select>
+                </div>
                 <div>
                     <p>Please give your feedback or describe your project</p>
-                    <textarea name="description" cols="80" rows="10"></textarea>
+                    <textarea name="description"></textarea>
                 </div>
                 
                 <div>
